@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environnements et secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Données privées et documents validés
+storage/*
+!storage/.gitkeep
+eval/data/images/*
+!eval/data/images/.gitkeep
+eval/data/ground_truth/*
+!eval/data/ground_truth/.gitkeep
+
+# Modèles et caches téléchargés
+models/
+model_cache/
+.cache/
+**/paddleocr/
+**/transformers/
+
+# Éditeurs et systèmes
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

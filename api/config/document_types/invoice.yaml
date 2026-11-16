@@ -1,0 +1,20 @@
+name: invoice
+fields:
+  - name: fournisseur
+    type: string
+    description: Nom ou raison sociale du fournisseur.
+  - name: date
+    type: date
+    description: Date d'émission de la facture au format ISO 8601 (AAAA-MM-JJ).
+  - name: numero
+    type: string
+    description: Numéro ou référence de la facture.
+  - name: montant_ht
+    type: number
+    description: Montant hors taxes.
+  - name: tva
+    type: number
+    description: Montant de la taxe sur la valeur ajoutée.
+  - name: montant_total
+    type: number
+    description: Montant total toutes taxes comprises.
