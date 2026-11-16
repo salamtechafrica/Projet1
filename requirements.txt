@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-multipart
+ollama
+pydantic-settings
+pytest
+pillow
+pypdfium2
+pillow-heif
+rapidocr
+onnxruntime

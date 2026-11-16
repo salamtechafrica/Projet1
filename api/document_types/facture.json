@@ -1,0 +1,16 @@
+{
+  "type": "facture",
+  "description": "Facture d'un fournisseur ou prestataire : document qui demande le paiement de biens ou services vendus, avec un numéro de facture",
+  "champs": [
+    {"nom": "fournisseur", "type": "texte", "description": "nom de l'entreprise qui émet la facture"},
+    {"nom": "client", "type": "texte", "description": "nom de la personne ou de l'entreprise facturée"},
+    {"nom": "date", "type": "date", "description": "date d'émission de la facture"},
+    {"nom": "numero_facture", "type": "texte", "description": "numéro de la facture, souvent précédé de « Facture N° » ; une référence client, de commande ou de contrat n'est PAS un numéro de facture"},
+    {"nom": "montant_ht", "type": "montant", "description": "total hors taxes"},
+    {"nom": "tva", "type": "montant", "description": "montant total de la TVA (pas le taux)"},
+    {"nom": "montant_ttc", "type": "montant", "description": "total toutes taxes comprises, ou total à payer"}
+  ],
+  "controles": [
+    {"somme": ["montant_ht", "tva"], "total": "montant_ttc"}
+  ]
+}

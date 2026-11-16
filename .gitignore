@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+eval/data/*
+!eval/data/.gitkeep
+*.jpg
+*.jpeg
+*.png
+*.pdf

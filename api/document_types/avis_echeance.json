@@ -1,0 +1,14 @@
+{
+  "type": "avis_echeance",
+  "description": "Avis d'échéance ou appel de loyer / de charges / d'abonnement : document qui annonce une somme à payer pour une période (loyer du mois, échéance de prêt ou d'assurance…)",
+  "champs": [
+    {"nom": "emetteur", "type": "texte", "description": "organisme qui envoie l'avis (bailleur, agence, assureur…)"},
+    {"nom": "destinataire", "type": "texte", "description": "personne ou entreprise qui doit payer"},
+    {"nom": "periode_debut", "type": "date", "description": "premier jour de la période concernée"},
+    {"nom": "periode_fin", "type": "date", "description": "dernier jour de la période concernée"},
+    {"nom": "montant_total", "type": "montant", "description": "total à régler pour la période"},
+    {"nom": "date_paiement", "type": "date", "description": "date limite de paiement ou date du prélèvement"},
+    {"nom": "reference_contrat", "type": "texte", "description": "référence du contrat, du bail ou de la location"},
+    {"nom": "code_client", "type": "texte", "description": "numéro ou code client"}
+  ]
+}
